@@ -1,5 +1,6 @@
 .header {
-    width: calc(100% - 300px);
+    width: calc(100% - #{$sidebar-
+    width});
     height: 30px;
 
     background-color: #444;
