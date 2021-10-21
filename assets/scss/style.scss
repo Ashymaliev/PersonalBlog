@@ -1,5 +1,5 @@
 @import "vars";
-
+@import "vendor/reset";
 html {
     font-size: 62.5%;
 }
@@ -14,3 +14,9 @@ body {
     font-size: 1.4rem;
     color: $white;
 }
+
+
+// Blocks
+@import "blocks/header";
+@import "blocks/sibebar";
+@import "blocks/main";
