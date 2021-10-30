@@ -28,22 +28,23 @@ title: Post
     <div class="post__content">
         <div class="post__text">
             <h2></h2>
-            <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. 
-                Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales 
-                lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. 
-                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
-                Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+            <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+                Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales
+                lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna.
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                volutpat.</p>
 
             <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci
-                turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at 
-                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+                tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
                 Egestas ornare vel volutpat.</p>
 
-                <p>
-                    <img src="assets/images/image.jpg" alt="">
-                </p>
+            <p>
+                <img src="assets/images/image.jpg" alt="">
+            </p>
         </div> <!-- /.post__text -->
 
         <div class="related">
@@ -59,7 +60,7 @@ title: Post
                 </li>
                 <li class="related__list-item">
                     <h4 class="related__list-title">
-                        <a href="#">Как писать код быстро и  ...</a>
+                        <a href="#">Как писать код быстро и ...</a>
                     </h4>
                     <time class="related__list-date" datetime="2020-06-21
                     19:21">21.06.2020</time>
@@ -77,9 +78,23 @@ title: Post
                     </h4>
                     <time class="related__list-date" datetime="2020-06-21
                     19:21">21.06.2020</time>
-                </li>        
+                </li>
             </ul>
         </div> <!-- /.related -->
+
+        <div class="comments">
+            <h3 class="comments__title">Обсуждение</h3>
+
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <textarea class="form__control form__control--textarea" name="comment-text" 
+                    placeholder="Текст комментария"></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <button class="btn btn--blue btn--rounded btn--sm" 
+                type="submit">Отправить</button>
+            </form>
+        </div>
     </div> <!-- /.post__content -->
 
 </article> <!-- /.post -->
