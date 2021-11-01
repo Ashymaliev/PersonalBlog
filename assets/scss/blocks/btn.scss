@@ -18,6 +18,10 @@
    transition: bacground-color
    .2s linear;
 
+   &:hover {
+     text-decoration: none;
+   }
+
      &--red {
       background-color: 
       $red;
