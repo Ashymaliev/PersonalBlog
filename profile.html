@@ -6,10 +6,34 @@ title: Profile
 
 <h1 class="page__title">Профиль</h1>
 
+<div class="profile">
+    <div class="profile__form"></div>
+    <div class="profile__avatar">
+        <img src="" alt="">
+    </div>
+</div>
 <form action="/" class="form" method="post">
       <div class="form__group">
           <input type="text" class="form__control"
           placeholder="Ваше имя" value="Нурсултан Ашымалиев">
           <span class="form__line"></span>
       </div>
+      <div class="form__group form__group--md">
+        <input type="email" class="form__control"
+        placeholder="Ваш e-mail" value="ashymaliev@gmail.com">
+        <span class="form__line"></span>
+    </div>
+    <div class="form__group form__group--md">
+        <input type="password" class="form__control"
+        placeholder="Новый пароль">
+        <span class="form__line"></span>
+    </div>
+    <div class="form__group form__group--md">
+        <input type="password" class="form__control"
+        placeholder="Подтвердите пароль">
+        <span class="form__line"></span>
+    </div>
+
+    <button class="btn btn--blue btn--rounded btn--sm" 
+    type="submit">Сохранить</button>
 </form>

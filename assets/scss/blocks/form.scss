@@ -1,6 +1,11 @@
 .form__group {
     margin-bottom: 1.5rem;
     position: relative;
+
+    &--md {
+        margin-bottom: 
+        2.5rem;
+    }
 }
 
 .form__control {
