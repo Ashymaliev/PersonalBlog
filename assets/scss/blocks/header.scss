@@ -24,4 +24,8 @@
     display: flex;
     width: 40%;
     justify-content: flex-end;
+
+    @include breakpoint ($tablet-bp) {
+        width: 60%;
+    }
 }

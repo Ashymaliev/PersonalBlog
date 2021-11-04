@@ -1,0 +1,24 @@
+.burder {
+    width: 3rem;
+    height: 2rem;
+    padding: 0;
+
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+
+    transform: 
+    translateY(-50%);
+
+    span {
+        display: block;
+        width: 100%;
+        height: 2px;
+
+        background-color: 
+        $white;
+    }
+}
