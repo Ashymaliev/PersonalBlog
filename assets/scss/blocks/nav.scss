@@ -30,6 +30,14 @@
             block;
         }
     }
+
+    @include breakpoint ($tablet-bp) {
+        &:hover {
+            .nav__link{
+                background: none;
+            } 
+        }
+    }
 }
 
 .nav__link {
@@ -74,6 +82,8 @@
     breakpoint ($tablet-bp) {
         padding-left: 0;
         padding-right: 0;
+
+        font-size: 1.6rem;
     }
 }
 
