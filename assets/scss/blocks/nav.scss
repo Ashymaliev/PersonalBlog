@@ -1,11 +1,17 @@
 .nav {
-    @include  breakpoint ($tablet-bp) {
+   
+    &--mobile {
         display: none;
+        margin: 3rem 0;
     }
 
-    &--mobile {
-        display: block;
-        margin: 3rem 0;
+    @include  breakpoint ($tablet-bp) {
+        display: none;
+
+        &--mobile {
+            display: block;
+        }
+    
     }
 }
 
