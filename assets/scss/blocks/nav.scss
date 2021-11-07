@@ -1,11 +1,19 @@
 .nav {
-    @include breakpoint ($mobile-bp) {
+    @include  breakpoint ($tablet-bp) {
         display: none;
+    }
+
+    &--mobile {
+        display: block;
     }
 }
 
 .nav__list{
     display: flex;
+
+    @include breakpoint ($tablet-bp) {
+        flex-direction: column;
+    }
 }
 
 .nav__item {
@@ -61,4 +69,11 @@
             transform: translateY(-50%);
         }
     }
+
+    @include
+    breakpoint ($tablet-bp) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
+
