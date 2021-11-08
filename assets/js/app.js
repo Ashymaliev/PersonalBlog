@@ -7,23 +7,28 @@ modalBtn.forEach(item => {
         let $this = event.currentTarget;
         let modalId = $this.getAttribute('data-modal');
         let modal = document.getElementById(modalId);
+        let modalContent = modal.querySelectorAll('.modal__content');
+
+        modalContent.addEventListener('click', event => {
+            event.stopPropagation();
+        });
 
         modal.classList.add('show');
         body.classList.add('no-scroll');
     });
 });
 
-modalClose.forEach(item => {
+modal.forEach(item => {
     item.addEventListener('click', event => {
         let currentModal = event.target.closest('.modal');
 
         closeModal(currentModal);
     });
 });
-
+ 
 modal.forEach(item => {
     item.addEventListener('click', event => {
-        let currentModal = event.target;
+        let currentModal = event.currentTarget;
 
         closeModal(currentModal);
     });
