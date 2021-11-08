@@ -53,6 +53,11 @@
     a {
         color: inherit;
     }
+
+    @include
+    breakpoint ($tablet-bp) {
+        margin-bottom: 2rem;
+    }
 }
 
 .work__description {
@@ -62,6 +67,13 @@
     line-height: 1.68;
     font-weight: 300;
     color: #d2d2d2;
+
+    @include
+    breakpoint ($tablet-bp) {
+        margin-bottom: 2rem;
+
+        font-style: 1.4rem;
+    }
 }
 
 .work__footer {
