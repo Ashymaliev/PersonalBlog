@@ -8,7 +8,7 @@ modalBtn.forEach(item => {
         let $this = event.currentTarget;
         let modalId = $this.getAttribute('data-modal');
         let modal = document.getElementById(modalId);
-        let modalContent = modal.querySelectorAll('.modal__content');
+        
 
         modalContent.addEventListener('click', event => {
             event.stopPropagation();
@@ -16,6 +16,12 @@ modalBtn.forEach(item => {
 
         modal.classList.add('show');
         body.classList.add('no-scroll');
+
+        setTimeout(function() {
+            modalContent.style.transform = 'none';
+            modalContent.style.opacity = '1';
+        }, 1);
+        
     });
 });
 
@@ -36,6 +42,11 @@ modal.forEach(item => {
 });
 
 function closeModal(currentModal) {
-    currentModal.classList.remove('show');
-    body.classList.remove('no-scroll');
+    let modalContent = modal.querySelectorAll('.modal__content');
+    modalContent.removeAttribute('style');
+
+    setTimeout(() => { 
+        currentModal.classList.remove('show');
+        body.classList.remove('no-scroll');
+    }, 200);
 };

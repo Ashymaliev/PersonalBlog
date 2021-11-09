@@ -29,6 +29,11 @@
     background-color: 
     $primery;
     border-radius: 5px;
+    opacity: 0;
+
+    transform: translateY(-50px); 
+    transition: transform 200ms
+    ease-in-out;
 
     &--contact {
         padding-bottom: 
