@@ -3,12 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 100%;
+    padding: 1rem;
 
-    background-color: 
-    rgba ($black, .8);
+    background-color: rgba($black, .8);
 
     position: fixed;
     top: 0;
@@ -26,21 +25,21 @@
     padding: 8rem;
     position: relative;
 
-    background-color: 
-    $primery;
+    background-color: $primary;
     border-radius: 5px;
     opacity: 0;
-
-    transform: translateY(-50px); 
-    transition: transform 200ms
-    ease-in-out, opacity 200ms
-    ease-in-out;
-
-    &--contact {
-        padding-bottom: 
-        5.5rem;
+    
+    transform: translateY(-50px);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    
+    @include breakpoint($tablet-bp) {
+        padding: 5rem 3rem 3rem;
     }
 
+    &--contact {
+        padding-bottom: 2.5rem;
+    }
+    
     &--story {
         padding: 0;
         background: none;
@@ -49,39 +48,37 @@
 
 .modal__close {
     padding: 0;
-    position: absolute;
     background: none;
+    border: none;
     cursor: pointer;
     opacity: .5;
 
-    border: none;
-    top: 20px;
-    right: 20px;
-    transition: transform
-    .2s linear,
-    opacity .2s linear;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    transition: transform .2s linear, opacity .2s linear;
 
     &:hover {
-        transform: 
-        rotate(90deg);
+        transform: rotate(90deg);
         opacity: 1;
     }
 }
 
 .modal__footer {
     display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
     font-size: 1.2rem;
     color: #B2B2B2;
-    justify-content: 
-    center;
-    margin-top: 4rem;
 
     li {
         margin: 0 .5rem;
     }
 
     a {
-        color:inherit;
+        color: inherit;
         text-decoration: underline;
 
         &:hover {
@@ -90,7 +87,11 @@
     }
 }
 
+
 .modal__video {
     display: block;
     margin: 0 auto;
 }
+
+
+
