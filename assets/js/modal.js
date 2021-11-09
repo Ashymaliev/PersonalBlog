@@ -8,6 +8,7 @@ modalBtn.forEach(item => {
         let $this = event.currentTarget;
         let modalId = $this.getAttribute('data-modal');
         let modal = document.getElementById(modalId);
+        let modalContent = modal.querySelector('.modal__content');
         
 
         modalContent.addEventListener('click', event => {
